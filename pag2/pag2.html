@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Luminotecnia</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="../Comunes/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../Comunes/Estilo.css">
+        <script src="../Comunes/jquery-3.6.0.min.js"></script>
+        <script src="../Comunes/popper.min.js"></script>
+        <script src="../Comunes/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <header >
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class=col-sm>
+                        <a  class="header" 
+                            href="../pagprincipal/principal.html"
+                            title="Inicio">
+                            Inicio
+                        </a>
+                    </div>
+                    <div class=col-sm>
+                        <a  class="header"
+                            href="../pag1/pag1.html"
+                            title="Dimensionamiento de conductores">
+                            Dimensionamiento de conductores
+                        </a>
+                    </div>
+                    <div class=col-sm> 
+                        <a  class="header"
+                            href="../pag2/pag2.html"
+                            title="Luminotecnia">
+                            Luminotecnia
+                        </a>
+                    </div>
+                    <div class=col-sm>
+                        <a  class="header"
+                            href="../pag3/pag3.html"
+                            title="Agitación y mezcla">
+                            Agitación y mezcla
+                        </a> 
+                    </div>
+                    <div class=col-md-auto>
+                        <form action="../..form-result.php"
+                                method="post"
+                                target="_blanck">
+                
+                            <p> <input type="search"
+                                    name="Busqueda"
+                                    placeholder="Buscar">
+                            <input type="submit"
+                                    value="Buscar"></p>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <article>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12
+                                col-sm-9
+                                col-md-d-9
+                                col-lg-9">
+                                <main><h1>Luminotecnia</h1> 
+                                    <p>
+                                        Ciencia aplicada que concierne a la luz, su control y 
+                                        manipulación, se ocupa principalmente de los elementos
+                                         físicos que producen energía lumínica como lámparas y
+                                         luminarias.
+                                     </p>
+                                     <h2>Conceptos previos</h2>
+                                     <h3>Luz</h3>
+                                     <p>La luz es la energía electromagnética visible por el 
+                                         ojo humano en un rango de longitud de onda entre 0,38 
+                                         y 0,78 micrómetros.</p>
+                                         <p><img src="img1html2.jpg" class="img-fluid"></p>
+                                     <p>Las fuentes de luz suelen ser superficies a altas 
+                                         temperaturas como el sol a una temperatura de 5500K 
+                                         (5227°C), filamentos de lámparas a 3300K (3027°C), 
+                                         las cuales emiten un espectro continúo de longitudes 
+                                         de onda.</p>
+                                         <p><img src="img2html2.jpg" class="img-fluid"></p>
+                                         <p><img src="img3html2.jpg" class="img-fluid"></p>
+                                     <p>Todos los cuerpos a una temperatura mayor a la del cero 
+                                         absoluto (-273°C), emite radiación en un amplio campo de 
+                                         longitudes de onda, llamándose “Radiación incandescente” 
+                                         o “Radiación de temperatura”</p>
+                                     <h4>Fuentes de luz artificial incandescente:</h4>
+                                     <ul>
+                                         <li>Llama de combustión.</li>
+                                         <li>Metal al rojo vivo.</li>
+                                         <li>Filamento de una lámpara.</li>
+                                     </ul>
+                                    
+                                     <table>
+                                         <thead>
+                                             <tr>
+                                                 <th>Ambiente</th>
+                                                 
+                                                 <th>Temperatura (K)</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 
+                                                 <td class="left">Cielo azul</td>
+                                                 <td>10000 - 30000</td>
+                                             </tr>
+                                             <tr>
+                                                 
+                                                 <td class="left">Cielo nublado</td>
+                                                 <td>7000</td>
+                                             </tr>
+                                             <tr>
+                                                
+                                                 <td class="left">Luz solar al mediodía</td>
+                                                 <td>5200</td>
+                                             </tr>
+                                             <tr>
+                                                
+                                                 <td class="left">Luna</td>
+                                                 <td>4100</td>
+                                             </tr>
+                                             <tr>
+                                                 <th  class="left" colspan="2">Lámparas fluorescentes:</th>
+                                             </tr>
+                                             <tr>
+                                                
+                                                 <td  class="left">Luz día</td>
+                                                 <td>6500</td>
+                                             </tr>
+                                             <tr>
+                                                 
+                                                 <td class="left">Blanco neutro</td>
+                                                 <td>4000</td>
+                                             </tr>
+                                             <tr>
+                                                 
+                                                 <td class="left">Blanco cálido</td>
+                                                 <td>3000</td>
+                                             </tr>
+                                             <tr>
+                                                 
+                                                 <td class="left">Blanco cálido de lujo</td>
+                                                 <td>2700</td>
+                                             </tr>
+                                             <tr>
+                                                 <th  class="left" colspan="2">Lámparas incandescentes:</th>
+                                             </tr>
+                                             <tr>
+                                                 
+                                                 <td class="left">Luz día 500W</td>
+                                                 <td>4000</td>
+                                             </tr>
+                                             <tr>
+                                                 
+                                                 <td class="left">Standard</td>
+                                                 <td>2700 - 3200</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Luz de vela</td>
+                                                 <td>1800</td>
+                                                 
+                                             </tr>
+                                             
+                                         </tbody>
+                                     </table>
+                                     <p>La luz monocromática es aquella que posee una única 
+                                         longitud de onda en su composición, por lo cual su 
+                                         espectro es discontinuo</p>
+                                         <p><img src="img4html2.jpg" class="img-fluid"></p>
+                                         <p><img src="img5html2.jpg" class="img-fluid"></p>
+                                     <h2>Magnitudes de la luz</h2>
+                                     <h3>Índice de rendimiento de color (Rg)</h3>
+                                     <p>Este índice nos permite conocer la similitud del 
+                                         espectro de una fuente de luz discontinua con la 
+                                         luz solar.</p>
+                                     <ul>
+                                         <li>Para Rg = 1, la luz es similar a la luz natural lo 
+                                             poseen las lámparas incandescentes.</li>
+                                         <li>Rg = 0, luz monocromática, como las lámparas de sodio.</li>
+                                         <li>Las luces fluorescentes tienen un Rg entre 0,7 y 0,9.</li>
+                                     </ul>
+                                     <h3>Flujo luminoso (lm)</h3>
+                                     <p>Es la cantidad de luz emitida o radiada, en un 
+                                         segundo, en todas las direcciones. Mide la energía 
+                                         global emitida por una fuente luminosa. Su magnitud 
+                                         es el lumen (lm).</p>
+                                     <table>
+                                         <thead>
+                                             <tr>
+                                                 <th>Lámpara</th>
+                                                 <th>Flujo luminoso (lm)</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td class="left">Lámpara incandescente 100W</td>
+                                                 <td>1380lm</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Lámpara fluoescente 36W</td>
+                                                 <td>3250lm</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Lámpara de mercurio de alta presión 400W</td>
+                                                 <td>22000lm</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Lámpara de luz mezcla 250W</td>
+                                                 <td>5600lm</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Lámpara de sodio a baja presión 35W</td>
+                                                 <td>4800lm</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Lámpara de sodio a alta presión 400W</td>
+                                                 <td>47000lm</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Lámpara halogenuro metálico de 250W</td>
+                                                 <td>17000lm</td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+                                     <h3>Intensidad (I)</h3>
+                                     <p>Es la cantidad de luz emitida en un segundo y en una 
+                                         determinada dirección, su magnitud es la candela 
+                                         (Cd), una candela se asemeja a la intensidad emitida 
+                                         por una vela.</p>
+                                     <p>Técnicamente una candela se define  como la 1/60 parte 
+                                         de la intensidad luminosa de un cuerpo negro a la 
+                                         temperatura de solidificación del platino (2042K) por 
+                                         cm2. </p>
+                                     <p>Una lámpara incandescente de 100w, tiene una 
+                                         luminosidad o intensidad luminosa de unas 130 
+                                         candelas.</p>
+                                     <h3>Iluminancia o nivel de iluminación</h3>
+                                     <p>Es una característica del objeto iluminado, indica 
+                                         la cantidad de luz que incide sobre su superficie.</p>
+                                     <p>Se representa por la letra E, siendo su unidad el lux (lx).</p>
+                                     <table>
+                                         <tbody>
+                                             <tr>
+                                                 <td class="left">Noche sin luz</td>
+                                                 <td>0,01lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Noche con luna llena</td>
+                                                 <td>0,2lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Noche con alumbrado público en las calles</td>
+                                                 <td>5 - 20lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Oficina con buena iluminación</td>
+                                                 <td>500lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Aparador bien iluminado</td>
+                                                 <td>3000lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Día claro con cielo nebuloso</td>
+                                                 <td>20000lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <th  class="left" colspan="2">Exteriores</th>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Calle en zona residencial</td>
+                                                 <td>4 - 7lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Avenida comercial importante</td>
+                                                 <td>15 - 20lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Plazas</td>
+                                                 <td>10 - 20lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Playas de estacionamiento</td>
+                                                 <td>50lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <th class="left" colspan="2">Interiores: Residencial</th>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Iluminación general</td>
+                                                 <td>100lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Iluminación localizada</td>
+                                                 <td>200lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Lectura, escritura</td>
+                                                 <td>400lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Dormitorio</td>
+                                                 <td>200lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Cocina (general)</td>
+                                                 <td>200lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Cocina (mesada)</td>
+                                                 <td>500 - 800lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Baño (general)</td>
+                                                 <td>100lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Baño (espejo)</td>
+                                                 <td>200lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <th class="left" colspan="2">Interior: Oficinas</th>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Halls y lobbys</td>
+                                                 <td>200lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Circulaciones</td>
+                                                 <td>200lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Salas de reuniones</td>
+                                                 <td>300lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Trabajo normal de oficina</td>
+                                                 <td>500lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <th class="left" colspan="2">Interior: varios</th>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Restaurante íntimo</td>
+                                                 <td>80 - 100lx</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Restaurante tipo grill</td>
+                                                 <td>300lx</td>
+                                             </tr>
+                                         </tbody>
+                             
+                                     </table>
+                                     <h3>Eficiencia luminosa</h3>
+                                     <p>Es la relación entre el flujo luminoso expresado en 
+                                         lúmenes y la potencia de la lámpara o fuente.</p>
+                                         <table>
+                                             <thead>
+                                                 <tr>
+                                                     <th rowspan="2">Tipo de lámpara</th>
+                                                     <th>Potencia</th>
+                                                     <th>Rendimiento luminoso</th>
+                                                 </tr>
+                                                 <tr>
+                                                     <th>W</th>
+                                                     <th>lm/W</th>
+                                                 </tr>
+                                             </thead>
+                                             <tbody>
+                                                 <tr>
+                                                     <td class="left">Incandescente común 40W/220V</td>
+                                                     <td>40</td>
+                                                     <td>11</td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td class="left">Fluorescente L 40W/20</td>
+                                                     <td>40</td>
+                                                     <td>80</td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td class="left">Mercurio de alta presión 400W</td>
+                                                     <td>400</td>
+                                                     <td>58</td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td class="left">Halogenuros metálicos 400W</td>
+                                                     <td>360</td>
+                                                     <td>78</td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td class="left">Sodio a alta presión 400W</td>
+                                                     <td>400</td>
+                                                     <td>120</td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td class="left">Sodio a baja presión 180W</td>
+                                                     <td>180</td>
+                                                     <td>183</td>
+                                                 </tr>
+                                             </tbody>
+                                         </table>
+                                     <h3>Curva de sensibilidad del ojo</h3>
+                                     <p>Las radiaciones de longitud de onda comprendidas 
+                                         entre los 380 nm y 780nm son captadas por el ojo 
+                                         humano como luz visible.</p>
+                                         <p><img src="img6html2.jpg" class="img-fluid"></p>
+                                     <p>Mediante la curva de sensibilidad se observa que 
+                                         para la luz blanca del día, la máxima sensibilidad 
+                                         del ojo corresponde a la longitud de onda de 555nm 
+                                         (color amarillo) y la mínima sensibilidad 
+                                         corresponde a los colores rojo y violeta. Es por 
+                                         ello que las fuentes luminosas cuyas longitudes de 
+                                         onda corresponden al amarillo-verde son las que 
+                                         tienen más eficacia aunque es la de peor calidad 
+                                         (estamos acostumbrados a la luz blanca del sol).</p>
+                                     <p>Para el caso de la luz nocturna, el máximo de 
+                                         sensibilidad se desplaza hacia longitudes de onda 
+                                         menores y por consiguiente, las radiaciones de 
+                                         menor longitud de onda (azul-violeta) producen 
+                                         mayor intensidad de sensación con baja iluminación.</p>
+                                     <h3>Enfoque</h3>
+                                     <p>Es la capacidad que tiene el ojo para ajustarse a 
+                                         las diferentes distancias que existen entre los 
+                                         objetos y obtener imágenes nítidas.</p>
+                                     <h3>Contraste</h3>
+                             
+                                     <p>Permite diferenciar dos objetos contiguos por diferencias 
+                                         notables de color.</p>
+                                         <p><img src="img7html2.jpg" class="img-fluid"></p>
+                                     <h3>Adaptación</h3>
+                                     <p>Es la capacidad que tiene el ojo para ajustarse a las diferentes iluminaciones 
+                                         de los objetos de manera automática mediante el ajuste 
+                                         de la pupila. </p>
+                                         <p><img src="img8html2.jpg" class="img-fluid"></p>
+                                     <p>El tiempo de adaptación al pasar de un ambiente oscuro a 
+                                         uno iluminado es relativamente corto de aproximadamente 
+                                         unos segundos, en cambio, para pasar de un ambiente claro 
+                                         a uno oscuro, el tiempo ronda entre los 30 - 40 minutos.</p>
+                                     <h3>Deslumbramiento</h3>
+                                     <p>Es un fenómeno que produce molestia o disminución de 
+                                         la capacidad para distinguir objetos, debido a luz 
+                                         que incide directamente en el campo visual.</p>
+                                         <p><img src="img9html2.jpg" class="img-fluid"></p>
+                                     <h2>Calculo de iluminación de interiores</h2>
+                                     <p>En la iluminación de un espacio debe buscarse que 
+                                         la misma sea uniforme y que el tipo de lámparas 
+                                         utilizados sea el adecuado, una vez hecho esto 
+                                         se debe conocer la cantidad necesaria de los 
+                                         mismos.</p>
+                                     <p>Para el calculo de iluminación existen 2 métodos 
+                                         utilizados generalmente.</p>
+                                     <ul>
+                                         <li>Método de los Lúmenes o Método del factor de 
+                                             utilización: siendo un método practico y sencillo.</li>
+                                         <li>Método del punto por punto o de Iluminarias 
+                                             puntuales: utilizado para puntos concretos.</li>
+                                     </ul>
+                                     <h4>Patrones de distribución:</h4>
+                                     <ul>
+                                         <li>General.</li>
+                                         <li>General localizado.</li>
+                                         <li>Localizado.</li>
+                                     </ul>
+                                     <p><img src="img12html2.jpg" class="img-fluid"></p>
+                                     <h3>Método del Lumen</h3>
+                                     <p>Diagrama de Flujo</p>
+                                     <p><img src="img10html2.jpg" class="img-fluid"></p>
+                                     <p>Ecuación utilizada para el calculo</p>
+                                     <p><img src="img11html2.jpg" class="img-fluid"></p>
+                                     <h4>Datos de entrada</h4>
+                                     <ul>
+                                         <li>Dimensiones del local y la altura del plano de 
+                                             trabajo, normalmente de 0,85m.</li>
+                                         <li>Dimensiones del local.</li>
+                                         <li>Altura del plano de trabajo.</li>
+                                         <li>Nivel de iluminancia media.</li>
+                                         <li>Elección del tipo de lampara.</li>
+                                         <li>Elección del tipo de luminaria en catálogos y su 
+                                             altura de suspensión.</li>
+                                     </ul>
+                                     <h3>Tabla de iluminancia media</h3>
+                                     <p><img src="img13html2.jpg" class="img-fluid"></p>
+                                     <h2>
+                                         Tipos de luminarias
+                                     </h2>
+                                     <h3>Incandescentes</h3>
+                                     <p>La luz se produce por el paso de corriente eléctrica a 
+                                         travéz de un filamento metálico</p>
+                                     <p>Son las de mayor consumo eléctrico, baratas y de 
+                                         menor duración.</p>
+                                     <p>Solo aprovechan el 5% de la energía eléctrica en 
+                                         la emisión de luz, el resto se transforma en 
+                                         calor.</p>
+                                         <p><img src="img14html2.jpg" class="img-fluid"></p>
+                                     <h3>Halógenas</h3>
+                                     <p>Utilizan un compuesto que libera un gas de un 
+                                         elemento halógeno en un sistema incandescente, 
+                                         consiguiendo así establecer un ciclo de 
+                                         regeneración.</p>
+                                     <p>Poseen mayor duración.</p>
+                                     <p><img src="img15html2.jpg" class="img-fluid"></p>
+                                     <h3>Fluorescentes</h3>
+                                     <p>Esta construido de un tubo de vidrio que contiene una 
+                                         pequeña cantidad de mercurio y gas argón.</p>
+                                     <p>Al aplicar una diferencia de potencial entre los dos electrodos 
+                                         situados a ambos lados del tubo, se produce una descarga 
+                                         ctrica, al pasar por el vapor de mercurio, este emite 
+                                         radiación ultravioleta, la cual es absorbida por la 
+                                         sustancia fluorescente que recubre el interior del tubo, 
+                                         emitiendo radiación visible.</p>
+                                     <p>La eficiencia en contraposición de las lamparas 
+                                         incandescentes es mayor y produce un menor 
+                                         calentamiento, consumen 80% menos de energía y 
+                                         duran entre 8 y 10 veces mas.</p>
+                                         <p><img src="img16html2.jpg" class="img-fluid"></p>
+                                     <h3>Bajo consumo</h3>
+                                     <p>Son lamparas fluorescentes compactas, se han ido 
+                                         adaptando al tamaño, formas y soportes de las 
+                                         bombillas convencionales.</p>
+                                     <p><img src="img17html2.jpg" class="img-fluid"></p>
+                                     <h3>LED (Light Emitting Diode)</h3>
+                                     <p>Utiliza un diodo que al polarizarse emite luz, el 
+                                         aprovechamiento energético es del 90%.</p>
+                                     <p><img src="img18html2.jpg" class="img-fluid"></p>
+                                     <table>
+                                         <thead>
+                                             <tr>
+                                                 <th>Ámbito de uso</th>
+                                                 <th>Tipos de lámparas más utilizados</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td rowspan="4">Doméstico</td>
+                                                 <td class="left">Incandescente</td>
+                                             </tr>
+                                             <tr><td class="left">Fluorescente</td></tr>
+                                             <tr><td class="left">Halógenas de baja potencia</td></tr>
+                                             <tr><td class="left">Fluorescentes compactas</td></tr>
+                                             <tr>
+                                                 <td rowspan="2">Oficinas</td>
+                                                 <td class="left">Alumbrado general: fluorescentes</td>
+                                             </tr>
+                                             <tr><td class="left">Alumbrado localizado incandescentes y halógenas 
+                                                 de baja tensión</td></tr>
+                                             <tr>
+                                                 <td rowspan="4">Comercial</td>
+                                                 <td class="left">Incandescentes</td>
+                                             </tr>    
+                                             <tr>
+                                                 <td class="left">
+                                                     Halógenas
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">
+                                                     Fluorescentes
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">
+                                                     Grandes superficies con techos altos, mercurio a añta 
+                                                     presión
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td rowspan="4">Industrial</td>
+                                                 <td class="left">Todos los tipos</td>
+                                             </tr>
+                                             <tr><td class="left">Luminarias situadas a baja altura (< 6m): fluorescentes</td></tr>
+                                             <tr><td class="left">Luminarias situadas a gran altura (> 6m): lámparas 
+                                                 de descarga a alta presión montadas en proyectores</td></tr>
+                                             <tr><td class="left">Alumbrado localizado: incandescentes</td></tr>
+                                             <tr>
+                                                 <td rowspan="2">Deportivo</td>
+                                                 <td class="left">Luminarias situadas a baja altura: fluorescentes</td>
+                                             </tr>
+                                             <tr><td class="left">Luminarias situadas a gran altura: lámparas de 
+                                                 vapor de mercurio a alta presión, halogenuros 
+                                                 metálicos y vapor de sodio a alta presión</td></tr>
+                                         </tbody>
+                             
+                                     </table>
+                                     <h2>Sistemas de alumbrado</h2>
+                                     <p>Dentro de los sistemas de alumbrado podemos encontrar 
+                                         a la iluminación directa como indirecta, las dos se 
+                                         fundamentan en como la luz llega desde la fuente hasta 
+                                         el objeto.</p>
+                                     <p><img src="img19html2.jpg" class="img-fluid"></p>
+                                     <h2> Determinar la altura de suspensión de las luminarias</h2>
+                                     <p><img src="img20html2.jpg" class="img-fluid"></p>
+                                     <ul>
+                                         <li>h: altura entre el plano de trabajo y las luminarias</li>
+                                         <li>h': altura del local</li>
+                                         <li>d: altura del plano de trabajo al techo</li>
+                                         <li>d': altura entre el plano de trabajo y las luminarias</li>
+                                     </ul>
+                                     <p><img src="img21html2.jpg" class="img-fluid"></p>
+                                     <h2>Calculo del índice del local (k)</h2>
+                                     <p><img src="img22html2.jpg" class="img-fluid"></p>
+                                     <h2>Elección del coeficiente de reflexión</h2>
+                                     <table>
+                                         <thead>
+                                             <tr>
+                                                 <th></th>
+                                                 <th>Color</th>
+                                                 <th>Factor de reflexión</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                            <tr>
+                                                <th rowspan="3">Techo</th>
+                                                <td class="left">Blanco o muy claro</td>
+                                                <td>0,7</td>
+                                            </tr> 
+                                            <tr>
+                                                <td class="left">Claro</td>
+                                                <td>0,5</td>
+                                            </tr>
+                                            <tr>
+                                                 <td class="left">Medio</td>
+                                                 <td>0,3</td>
+                                             </tr>
+                                             <tr>
+                                                 <th rowspan="3">Paredes</th>
+                                                 <td class="left">Claro</td>
+                                                 <td>0,5</td>
+                                             </tr> 
+                                             <tr>
+                                                 <td class="left">Medio</td>
+                                                 <td>0,3</td>
+                                             </tr>
+                                             <tr>
+                                                  <td class="left">Oscuro</td>
+                                                  <td>0,1</td>
+                                             </tr>
+                                             <tr>
+                                                 <th rowspan="2">Suelo</th>
+                                                 <td class="left">Claro</td>
+                                                 <td>0,3</td>
+                                             </tr> 
+                                             <tr>
+                                                 <td class="left">Oscuro</td>
+                                                 <td>0,1</td>
+                                             </tr>
+                                             
+                                         </tbody>
+                                     </table>
+                                     <h2>Poder reflectante de algunos colores y materiales</h2>
+                                     <p><img src="img23html2.jpg" class="img-fluid"></p>
+                                     <h2>Factor de utilización</h2>
+                                     <p><img src="img24html2.jpg" class="img-fluid"></p>
+                                     <h2>Factor de mantenimiento (f)</h2>
+                                     <p>Este coeficiente dependerá del grado de suciedad 
+                                         ambiental y de la frecuencia de la limpieza del 
+                                         local</p>
+                                     <table>
+                                         <thead>
+                                             <tr>
+                                                 <th>Ambiente</th>
+                                                 <th>Factor de mantenimiento (f)</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td class="left">Limpio</td>
+                                                 <td>0,8</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Sucio</td>
+                                                 <td>0,6</td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+                                     <h2>Factor de depreciación</h2>
+                                     <p><img src="img25html2.jpg" class="img-fluid"></p>
+                                     <p><img src="img26html2.jpg" class="img-fluid"></p>
+                                     <h2>Calculo del número de luminarias</h2>
+                                     <p>Despejando la igualdad que se tenia primeramente 
+                                         obtenemos que:</p>
+                                     <p><img src="img27html2.jpg" class="img-fluid"></p>
+                                     <h2>Emplazamiento de las luminarias</h2>
+                                     <p>Una vez obtenido el número mínimo de lámparas y 
+                                         luminarias se procede a calcular la distribución 
+                                         sobre la planta del local.</p>
+                                     <p><img src="img28html2.jpg" class="img-fluid"></p>
+                                     <p>La distancia máxima de separación entre las 
+                                         luminarias dependerá del angulo de apertura del 
+                                         haz de luz y de la altura de las luminarias sobre 
+                                         el plano de trabajo.</p>
+                                     <p><img src="img29html2.jpg" class="img-fluid"></p>
+                                     <table>
+                                         <thead>
+                                             <tr>
+                                                 <th>Tipo de luminaria</th>
+                                                 <th>Altura del local</th>
+                                                 <th>Distancia máxima entre luminarias</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td class="left">Intensiva</td>
+                                                 <td>> 10m</td>
+                                                 <td>e <= 1,2m</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Extensiva</td>
+                                                 <td>6 - 10m</td>
+                                                 <td rowspan="2">e <= 1,5m</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Semiextensiva</td>
+                                                 <td>4 - 6m</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left">Extensiva</td>
+                                                 <td><= 4m</td>
+                                                 <td>e <= 1,6m</td>
+                                             </tr>
+                                             <tr>
+                                                 <td class="left" colspan="3">*distancia pared-luminaria: e/2</td>
+                                                 
+                                             </tr>
+                                         </tbody>
+                                     </table>
+                                     <h2>Comprobar los resultados</h2>
+                                     <p>Lo ultimo que se debe hacer es comprobar la 
+                                         viabilidad de los resultados obtenidos, revisando 
+                                         si la iluminancia media obtenida en la instalación  
+                                         diseñada es igual o superior a la recomendada en 
+                                         tablas.</p>
+                                     <p><img src="img30html2.jpg" class="img-fluid"></p>
+                                     <p>En cuyo caso, diese menor, se debe buscar una 
+                                         lampara con mayor flujo luminoso, que posea mejor 
+                                         rendimiento luminoso,, esto generara un uso 
+                                         eficiente de la energía y reducirá la cantidad 
+                                         de elementos a utilizar</p>
+                                </main>
+                    </div>
+                    <div class="col-xs-12
+                                col-sm-3
+                                col-md-d-3
+                                col-lg-3">
+                                <aside>
+                                    <ul>
+                                        <li><h1>Enlaces de Interes:</h1></li>
+                                        <li><a href="https://www.roperpumps.com/" target="_blanck">Bombas Roper</a></li>
+                                        <li><a href="https://www.ducon.com/index.html"target="_blanck">Ducon - Ingenieria Ambiental</a></li>
+                                        <li><a href="https://www.checalc.com/index.html"target="_blanck">Calculos en Ingenieria Quimica</a></li>
+                                        <li><a href="https://encyclopedia.che.engin.umich.edu/"target="_blanck">Enciclopedia Visual de equipamientos para Ingenieria Quimica</a></li>
+                                        <li><a href="https://www.argentina.gob.ar/inta"target="_blanck">Instituto Nacional de Tecnologia Agropecuaria (INTA)</a></li>
+                                        <li><a href="https://www.argentina.gob.ar/inti"target="_blanck">Instituto Nacional de Tecnología Industrial (INTI)</a></li>
+                                        <li><a href="https://iquimica.com.ar/"target="_blanck">Ingenieria Quimica (IQ)</a></li>
+                                        <li><a href="https://prtr-es.es/documentos/documentos-mejores-tecnicas-disponibles"target="_blanck">Mejores tecnicas disponibles (UE)</a></li>
+                                        <li><a href="https://es.tradingview.com/"target="_blanck">TradingView</a></li>
+                                        <li><a href="https://www.tinkercad.com/dashboard"target="_blanck">TinkerCad - Arduino/ Electronica/ Impresión 3D</a></li>
+                                    </ul>
+                                </aside>
+                        
+                    </div>
+                </div>
+                <footer>
+                    <div class="row">
+                        <div class="col-xs-12
+                                    col-sm-6
+                                    col-md-d-8
+                                    col-lg-8">
+                                    <h1>Sobre mí:</h1>
+                                    <p class="foot">Soy Palaszczuk Martin y me encantan los retos, la creatividad, 
+                                        la música y por supuesto la informática, por ello, realicé este 
+                                        página web para poder llevar a cada uno de ustedes algunos 
+                                        conocimientos de Ingeniería Química.</p>
+                                    
+                        </div> 
+                        <div class="col-xs-12
+                                    col-sm-6
+                                    col-md-d-4
+                                    col-lg-4">
+                                    <div class="socialContact 
+                                                container">
+                                                <div class="row">
+                                                    <h2 class="col-sm">Contacto:</h2>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <a href="https://www.facebook.com" target="_blank">
+                                                            <i class="fa fa-facebook" aria-hidden="true"><img class="redSocial" src="../Comunes/Facebook.svg"></i>
+                                                            </a>
+                                                            </li>     
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.twitter.com" target="_blank">
+                                                            <i class="fa fa-twitter" aria-hidden="true"><img class="redSocial"src="../Comunes/Twitter.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.instagram.com" target="_blank">
+                                                            <i class="fa fa-instagram" aria-hidden="true"><img class="redSocial"src="../Comunes/Instagram.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.pinterest.com" target="_blank">
+                                                            <i class="fa fa-pinterest" aria-hidden="true"><img class="redSocial"src="../Comunes/Pinterest.svg"></i>
+                                                            </a>   
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.linkedin.com" target="_blank">
+                                                            <i class="fa fa-linkedin" aria-hidden="true"><img class="redSocial"src="../Comunes/Linkedin.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    
+                                                </div>
+                                                                
+                                    </div> 
+                        </div> 
+                    </div>
+                </footer>
+
+            </div>
+        </article>  
+    </body>
+</html>

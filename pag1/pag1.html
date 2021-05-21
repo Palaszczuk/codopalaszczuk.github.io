@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dimensionamiento de conductores</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../Comunes/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../Comunes/Estilo.css">
+        <script src="../Comunes/jquery-3.6.0.min.js"></script>
+        <script src="../Comunes/popper.min.js"></script>
+        <script src="../Comunes/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <header >
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class=col-sm>
+                        <a  class="header" 
+                            href="../pagprincipal/principal.html"
+                            title="Inicio">
+                            Inicio
+                        </a>
+                    </div>
+                    <div class=col-sm>
+                        <a  class="header"
+                            href="../pag1/pag1.html"
+                            title="Dimensionamiento de conductores">
+                            Dimensionamiento de conductores
+                        </a>
+                    </div>
+                    <div class=col-sm> 
+                        <a  class="header"
+                            href="../pag2/pag2.html"
+                            title="Luminotecnia">
+                            Luminotecnia
+                        </a>
+                    </div>
+                    <div class=col-sm>
+                        <a  class="header"
+                            href="../pag3/pag3.html"
+                            title="Agitación y mezcla">
+                            Agitación y mezcla
+                        </a> 
+                    </div>
+                    <div class=col-md-auto>
+                        <form action="../..form-result.php"
+                                method="post"
+                                target="_blanck">
+                
+                            <p> <input type="search"
+                                    name="Busqueda"
+                                    placeholder="Buscar">
+                            <input type="submit"
+                                    value="Buscar"></p>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <article>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12
+                                col-sm-9
+                                col-md-d-9
+                                col-lg-9">
+                        <main>
+                        <h1>Dimensionamiento de conductores</h1>
+                    <h2>Generalidades</h2>
+                    <p>El dimensionamiento de <strong>conductores</strong> implica determinar la sección de los conductores en una instalación eléctrica a corriente nominal, como también, los dispositivos de protección necesarios para su manejo.
+                        Las etapas que se deben considerar son:</p>
+                        <ul>
+                            <li>Definir la tensión nominal.</li>
+                            <li>Determinar la corriente que circulara en las lineas.</li>
+                            <li>Elegir el tipo de conductor y la forma de instalación.</li>
+                            <li>Determinar la sección utilizando el criterio de “capacidad de conducción de corriente”.</li>
+                            <li>Verificar la sección por el criterio de “corriente de cortocircuito”.</li>
+                            <li>Verificar la sección por el criterio de “caída de tensión”.</li>
+                            <li>Verificar el cumplimiento de las secciones mínimas exigidas.</li>
+                        </ul>
+                        <h2>Tensión nominal</h2>
+                        <p>La tensión nominal debe ser la adecuada para las condiciones de operación de la red en la que se realiza la instalación
+                        </p>
+                        <ul>
+                            <li><strong>U<sub>0</sub>:</strong> tensión nominal a frecuencia industrial entre el conductor y el conductor de protección a tierra o pantalla metálica para la cual está diseñado el cable. </li>
+                            <li><strong>U:</strong> tensión nominal a frecuencia industrial entre los conductores para la cual está diseñado el cable.</li>
+                            <li><strong>U<sub>m</sub>:</strong> tensión máxima para el equipamiento (ver IRAM 2211-Parte I). </li>
+                        </ul>
+                        <p>Para cada valor de la tensión U, los valores correspondientes de Uo se definen en función de las características de la red, de la forma siguiente:</p>
+                        <p><strong>Categoría I:</strong> Comprenderá las redes en que, en el caso de falla de una fase contra tierra, el cable es separado del servicio en un tiempo no mayor de 1 hora.</p>
+                        <p>Cuando se utilicen cables con conductores aislados, individualmente apantallado, podrán ser toleradas duraciones más prolongadas, pero en ningún caso dichos períodos serán mayores de 8 hs.</p>
+                        <p>Se preverá que estas situaciones anormales no se presenten frecuentemente.</p><br>
+                        <p><strong>Categoría II:</strong> Comprenderá todas las redes que no están incluidas en la categoría anterior.</p><br>
+                        <p class="image"><img src="cuadro1html1.jpg"class="img-fluid"  ></p>
+                        <p><strong>Nota 1:</strong> Para redes cuya tensión máxima permanente no esté incluida en la tabla, se considerará el valor inmediato superior.</p>
+                        <P><strong>Nota 2:</strong> Si el cable es usado en un sistema donde una falla a tierra no es eliminada en forma automática y rápida (por ej. sistemas con neutro aislado), el esfuerzo dieléctrico adicional sobre la aislación del cable durante la falla a tierra, reduce en cierto grado la vida útil de la aislación. Por ello, si el sistema está previsto para operar regularmente con una falla a tierra, se deberá adoptar la categoría II</P>
+                        <h2>Corriente de proyecto:</h2>
+                        <p>Es la corriente máxima permanente considerando las potencias nominales de las cargas aplicadas. En caso de existir fluctuaciones de carga importantes, se deberá disponer del diagrama de cargas correspondiente, o sea, la curva de variación de la corriente en función del tiempo.</p>
+                        <h2>Cálculo de la capacidad de conducción de corriente</h2>
+                        <p>La corriente transportada por un conductor siempre produce pérdidas de energía térmica por efecto Joule. </p>
+                        <p>Esa energía se emplea, en parte, para elevar la temperatura del conductor, y el resto se disipa hacia el medio ambiente como calor. Luego de circular corriente durante cierto tiempo, la temperatura del conductor deja de crecer, produciéndose el "equilibrio térmico" del mismo.</p>
+                        <p>La corriente que circulando continuamente por el conductor, produce el equilibrio térmico a la temperatura máxima de servicio continuo, se denomina "capacidad de conducción de corriente", Iz.</p>
+                        <p>Una vez conocida esta, se determina la sección por el criterio de "intensidad máxima admisible por calentamiento" o bien, dada la complejidad de estos cálculos, se recurre a las tablas incluidas en las hojas técnicas proporcionadas por los fabricantes de cables.</p>
+                        <p>Las mismas están referidas a la tensión nominal y a los casos de instalación más corrientes: la instalación en cañerías embutidas para los cables unipolares y al aire o en instalación enterrada para los subterráneos, en las siguientes condiciones:</p>
+                        <p><img src="cuadro2html1.jpg" class="img-fluid"></p>
+                        <p>En el caso de otras disposiciones o que se deba instalar a lo largo del recorrido previsto más de un cable tripolar o más de una terna de cables unipolares, es preciso considerar el calentamiento mutuo y reducir la intensidad admisible de los cables mediante la aplicación de coeficientes de reducción, cuyos valores se encuentran tabulados </p>
+                        <h2>Uso de tablas</h2>
+                        <p>Como se indicaba anteriormente, la complejidad de los cálculos ha popularizado el empleo de tablas de dimensionamiento, provistas por los fabricantes de conductores o las incluídas en el Reglamento de Instalaciones Eléctricas en Inmuebles de la A.E.A.</p>
+                        <p>Por ejemplo, para cables en cañerías embutidas o a la vista, Pirelli Cables fabrica la línea Pirastic Ecoplus. Se trata de cables unipolares aislados en PVC según norma IRAM 2183, cuyos datos principales son: </p>
+                        <p><img src="cuadro3html1.jpg" class="img-fluid"></p><br>
+                        <p><img src="cuadro4html1.jpg" class="img-fluid"></p><br>
+                        <p><img src="cuadro5html1.jpg" class="img-fluid"></p><br>
+                        <p><img src="cuadro6html1.jpg" class="img-fluid"></p><br>
+                        <p><img src="cuadro7html1.jpg" class="img-fluid"></p><br>
+                        <p><strong>(1)</strong> 3 cables en cañerías embutidas en mampostería o en aire libre dispuestos en plano, temperatura
+                            ambiente 30 ºC (no se considera el de protección).</p>
+                        <p><strong>(2)</strong> Cables en contacto en corriente alterna monofásica 50 Hz, cos ϕ =0,8 (no se considera el de protección).</p>
+                        <p>A modo orientativo, a continuación se presentan algunos valores de los coeficientes de corrección de la corriente admisible:</p>
+                        <ul>
+                            <li>Para dos cables en cañería los valores de intensidad admisible se deberán multiplicar por 1,10; si los cables instalados son de 4 a 6 multiplicar por 0,8 y si son de 7 a 9 cables el coeficiente de multiplicación será 0,7.</li>
+                            <li>En aire libre multiplicar por 1,12.</li>
+                            <li>Para temperatura ambiente de 40 ºC multiplicar por 0,89</li>
+                            <li>Cables en aire: se considera tres cables unipolares en un plano sobre bandeja y distanciados un diámetro o un
+                                cable multipolar sólo, en un ambiente a 40 °C.</li>
+                            <li>Cables enterrados: tres cables unipolares colocados en un plano horizontal y distanciados 7 cm o un cable
+                                multipolar solo, enterrado a 0,70 m de profundidad en un terreno a 25 °C y 100 °C . cm/W de resistividad térmica.</li>
+                            <li>Para otras condiciones de instalación emplear los coeficientes de corrección de la corriente admisible que
+                                correspondan. 
+                                </li>
+                        </ul>
+                        <p>Por ejemplo, para cables de uso subterráneo de BT, Pirelli Cables elabora la línea SINTENAX VIPER (bajo
+                            norma IRAM 2178) cuyos datos principales son: </p>
+                        <h2>Coeficientes de reducción de la corriente admisible por temperaturas diferentes a las de referencia</h3>
+                        <p><img src="cuadro8html1.jpg" class="img-fluid"></p>
+                    
+                        <h2>Coeficientes de reducción de la corriente admisible de acuerdo a la forma de tendido</h3>
+                        <p><img src="cuadro9html1.jpg" class="img-fluid"></p>
+                        <p>Cables instalados al aire en bandejas continuas en contacto con la pared y entre si y con las bandejas separadas mas
+                            de 20 cm. 
+                            </p>
+                        <p><img src="cuadro10html1.jpg" class="img-fluid"></p>
+                        <p>En bandejas continuas, distanciados de la pared mas de 20 mm. y separados entre si un diámetro. 
+                        </p>    
+                        <p><img src="cuadro11html1.jpg" class="img-fluid"></p>
+                        <p>En bandejas continuas, distanciados de la pared mas de 20 mm. y separados entre si dos diámetros.</p>
+                        <p><img src="cuadro12html1.jpg" class="img-fluid"></p>
+                        <p>En bandejas continuas, distanciados de la pared mas de 20 mm. y separados entre si un diámetro.</p>
+                        <p><img src="cuadro13html1.jpg" class="img-fluid"></p>
+                        <p>En bandejas perforadas, en contacto entre sí.</p>
+                        <h2>Verificación de la corriente de cortocircuito</h2>
+                        <p>Se debe verificar la viabilidad de la sección calculada de acuerdo a las secciones admisibles en
+                            cortocircuito. Las mismas surgen de las tablas de los fabricantes. </p>
+                        <h2>Verificación de la caída de tensión</h2>
+                        <p>La caída de tensión se origina porque el conductor presenta una resistencia al pasaje de la corriente que es función
+                            del material, la longitud y la sección; por ello, la sección calculada debe verificarse por caída de tensión en la
+                            línea, en base a las siguientes fórmulas aproximadas: 
+                            </p>
+                        <p>Para circuitos monofásicos:</p>
+                        <p><img src="cuadro14html1.jpg" class="img-fluid"></p>
+                        <p>Para circuitos trifásicos:</p>
+                        <p><img src="cuadro15html1.jpg" class="img-fluid"></p>
+                        <p>Donde:</p>
+                        <ul>
+                            <li>ΔU es la caída de tensión en %.</li>
+                            <li>Uf es la tensión de fase (V).</li>
+                            <li> UL es la tensión de línea (V).</li>
+                            <li>L es la longitud del circuito (km).</li>
+                            <li>I es la intensidad de corriente de fase del tramo del circuito (A).</li>
+                            <li>R es la resistencia del conductor (ohm / km) en C.A. a la temperatura de servicio.</li>
+                            <li>X es la reactancia del conductor (ohm / km).</li>
+                            <li>cos ϕ es el factor de potencia de la instalación.</li>
+                        </ul>
+                        <p>La caída de tensión provocada por el pasaje de corriente en los conductores de un circuito debe mantenerse dentro
+                            de los límites prefijados por las normas de aplicación, a fin de no perjudicar el funcionamiento de los equipos
+                            alimentados por los mismos. La caída de tensión se considera entre el origen de la instalación y el último punto de
+                            utilización. </p>
+                        <p>Según la reglamentación de la Asociación Electrotécnica Argentina, las caídas máximas admisibles son: </p>
+                        <ul>
+                            <li>Circuitos de alumbrado: ΔU = 3%</li>
+                            <li>Circuitos fuerza motriz: ΔU = 5 % (en régimen)</li>
+                            <li> ΔU =15 % (en arranque), aunque se estima conveniente limitarlo al 10%.</li>
+                            <li>Circuitos alimentados en MT: ΔU = 7 % </li>
+                        </ul>
+                        <p>La caída de tensión se debe calcular considerando la alimentación de todos los aparatos susceptibles de funcionar
+                            simultáneamente.</p>
+                        <p>Cabe aclarar que la AEA no es taxativa respecto al tramo total de cálculo de la caída de tensión, generalmente se
+                            interpreta que basta con verificar desde la acometida hasta el tablero de usuario, tablero de ascensor, tablero de
+                            bomba, etcétera.</p>
+                        <p>A los efectos prácticos se debe considerar el valor de la reactancia sólo para conductores de sección mayor a 25
+                            mm²; el cos ϕ puede tomarse igual a 0,9 en primera aproximación.</p>
+                        <p>Para cables unipolares de simple vaina (IRAM 2183) los valores aproximados de resistencia efectiva a 70 °C y 50 Hz, considerando una separación del orden de un diámetro de conductor entre ellos, son los siguientes: 
+                        </p>
+                        <p><img src="cuadro16html1.jpg" class="img-fluid"></p>
+                        <h2>Verificación de las secciones mínimas exigidas</h2>
+                        <p>De acuerdo a la ubicación de los diferentes circuitos, el Reglamento de la AEA establece las siguientes secciones
+                            mínimas (para conductores de cobre) </p>
+                        <p><img src="cuadro17html1.jpg" class="img-fluid"></p>
+                        </main>
+                    </div>
+                    <div class="col-xs-12
+                                col-sm-3
+                                col-md-d-3
+                                col-lg-3">
+                                <aside>
+                                    
+                                    
+                                    <ul>
+                                        <li><h1>Enlaces de Interes:</h1></li>
+                                        <li><a href="https://www.roperpumps.com/" target="_blanck">Bombas Roper</a></li>
+                                        <li><a href="https://www.ducon.com/index.html"target="_blanck">Ducon - Ingenieria Ambiental</a></li>
+                                        <li><a href="https://www.checalc.com/index.html"target="_blanck">Calculos en Ingenieria Quimica</a></li>
+                                        <li><a href="https://encyclopedia.che.engin.umich.edu/"target="_blanck">Enciclopedia Visual de equipamientos para Ingenieria Quimica</a></li>
+                                        <li><a href="https://www.argentina.gob.ar/inta"target="_blanck">Instituto Nacional de Tecnologia Agropecuaria (INTA)</a></li>
+                                        <li><a href="https://www.argentina.gob.ar/inti"target="_blanck">Instituto Nacional de Tecnología Industrial (INTI)</a></li>
+                                        <li><a href="https://iquimica.com.ar/"target="_blanck">Ingenieria Quimica (IQ)</a></li>
+                                        <li><a href="https://prtr-es.es/documentos/documentos-mejores-tecnicas-disponibles"target="_blanck">Mejores tecnicas disponibles (UE)</a></li>
+                                        <li><a href="https://es.tradingview.com/"target="_blanck">TradingView</a></li>
+                                        <li><a href="https://www.tinkercad.com/dashboard"target="_blanck">TinkerCad - Arduino/ Electronica/ Impresión 3D</a></li>
+                                    </ul>
+                                </aside>
+                        
+                    </div>
+                </div>
+                <footer>
+                    <div class="row">
+                        <div class="col-xs-12
+                                    col-sm-6
+                                    col-md-d-8
+                                    col-lg-8">
+                                    <h1>Sobre mí:</h1>
+                                    <p class="foot">Soy Palaszczuk Martin y me encantan los retos, la creatividad, 
+                                        la música y por supuesto la informática, por ello, realicé este 
+                                        página web para poder llevar a cada uno de ustedes algunos 
+                                        conocimientos de Ingeniería Química.</p>
+                                    
+                        </div> 
+                        <div class="col-xs-12
+                                    col-sm-6
+                                    col-md-d-4
+                                    col-lg-4">
+                                    <div class="socialContact 
+                                                container">
+                                                <div class="row">
+                                                    <h2 class="col-sm">Contacto:</h2>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <a href="https://www.facebook.com" target="_blank">
+                                                            <i class="fa fa-facebook" aria-hidden="true"><img class="redSocial" src="../Comunes/Facebook.svg"></i>
+                                                            </a>
+                                                            </li>     
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.twitter.com" target="_blank">
+                                                            <i class="fa fa-twitter" aria-hidden="true"><img class="redSocial"src="../Comunes/Twitter.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.instagram.com" target="_blank">
+                                                            <i class="fa fa-instagram" aria-hidden="true"><img class="redSocial"src="../Comunes/Instagram.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.pinterest.com" target="_blank">
+                                                            <i class="fa fa-pinterest" aria-hidden="true"><img class="redSocial"src="../Comunes/Pinterest.svg"></i>
+                                                            </a>   
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.linkedin.com" target="_blank">
+                                                            <i class="fa fa-linkedin" aria-hidden="true"><img class="redSocial"src="../Comunes/Linkedin.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    
+                                                </div>
+                                                                
+                                    </div> 
+                        </div> 
+                    </div>
+                </footer>
+
+            </div>
+        </article>  
+    </body>
+</html>

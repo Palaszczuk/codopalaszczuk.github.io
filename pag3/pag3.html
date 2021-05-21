@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Agitadores</title>
+        <meta name="description" content="">    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../Comunes/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../Comunes/Estilo.css">
+        <script src="../Comunes/jquery-3.6.0.min.js"></script>
+        <script src="../Comunes/popper.min.js"></script>
+        <script src="../Comunes/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header >
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class=col-sm>
+                        <a  class="header" 
+                            href="../pagprincipal/principal.html"
+                            title="Inicio">
+                            Inicio
+                        </a>
+                    </div>
+                    <div class=col-sm>
+                        <a  class="header"
+                            href="../pag1/pag1.html"
+                            title="Dimensionamiento de conductores">
+                            Dimensionamiento de conductores
+                        </a>
+                    </div>
+                    <div class=col-sm> 
+                        <a  class="header"
+                            href="../pag2/pag2.html"
+                            title="Luminotecnia">
+                            Luminotecnia
+                        </a>
+                    </div>
+                    <div class=col-sm>
+                        <a  class="header"
+                            href="../pag3/pag3.html"
+                            title="Agitación y mezcla">
+                            Agitación y mezcla
+                        </a> 
+                    </div>
+                    <div class=col-md-auto>
+                        <form action="../..form-result.php"
+                                method="post"
+                                target="_blanck">
+                
+                            <p> <input type="search"
+                                    name="Busqueda"
+                                    placeholder="Buscar">
+                            <input type="submit"
+                                    value="Buscar"></p>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <article>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12
+                                col-sm-9
+                                col-md-d-9
+                                col-lg-9">
+                                <main>
+                                    <h1>Agitación y mezcla</h1>
+                                    <h2>Consumo de potencia de un agitador</h2>
+                                    <h3>Consideraciones generales</h3>
+                                    <p>Para poder diseñar un agitador se deben tener en cuenta 
+                                        las siguientes variables. las cuales afectaran y 
+                                        determinaran las necesidades y objetivos particulares 
+                                        de la operación:</p>
+                                    <ul>
+                                        <li>Variables relacionadas con el líquido, (densidad y 
+                                            viscosidad)</li>
+                                        <li>Tipo de impulsor</li>
+                                        <li>Velocidad del impulsor (N)</li>
+                                        <li>Si posee placas deflectoras</li>
+                                        <li>Proporciones del tanque</li>
+                                    </ul>
+                                    <p>Para conocer la potencia requerida para hacer girar un determinado
+                                        impulsor con una velocidad determinada, se utilizan 
+                                        correlaciones empíricas de la potencia (N° de potencia) 
+                                        en función de otras variables del sistema.</p>
+                                    <p>La forma general de estas correlaciones pueden 
+                                        obtenerse mediante el análisis dimensional, en 
+                                        función de las medidas de los elementos que componen 
+                                        el agitador.</p>
+                                    <h3>Relaciones dimensionales en un agitador tipo turbina</h3>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Relación</th>
+                                                <th>Proporción</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="left">Da/Dt</td>
+                                                <td>1/3</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">E/Dt</td>
+                                                <td>1/3</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">L/Da</td>
+                                                <td>1/4</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">W/Da</td>
+                                                <td>1/5</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">J/Dt</td>
+                                                <td>1/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">H/Dt</td>
+                                                <td>1</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                    <p>Las dimensiones lineales del sistema pueden 
+                                        convertirse en magnitudes adimensionales llamadas 
+                                        "Factores de forma",  dividiendo cada uno de los 
+                                        términos por uno de ellos que se toma como base</p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>N° adimensional</th>
+                                                <th>Relación</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="left">S1</td>
+                                                <td>Da/Dt</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">S2</td>
+                                                <td>E/Da</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">S3</td>
+                                                <td>L/Da</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">S4</td>
+                                                <td>W/Da</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">S5</td>
+                                                <td>J/Dt</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">S6</td>
+                                                <td>H/Dt</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Dos sistemas son geométricamente semejantes cuando 
+                                        tienen iguales factores de forma, aunque difieran en 
+                                        tamaño.</p>
+                                    
+                                    
+                                    <h2>Cálculo de potencia en el agitador</h2>
+                                    <p>La potencia consumida por un agitador se puede 
+                                        conocer a través de números adimensionales, 
+                                        relacionando por medio de gráficos, el número de 
+                                        Reynolds y el número de potencia. Estos gráficos 
+                                        van a depender de las características geométricas 
+                                        del agitador y de la presencia o no de placas 
+                                        deflectoras.</p>
+                                    <h2>Número de Reynolds (Re)</h2>
+                                    <p>El número de Reynolds es una expresión 
+                                        adimensional que permite caracterixzar el 
+                                        movimiento de un fluido. Relaciona densidad, 
+                                        viscosidad del fluido, diámetro y velocidad 
+                                        periférica del impulsor.</p>
+                                        <p><img src="img1html3.jpg" class="img-fluid"></p>
+                                    <p>Donde:</p>
+                                    <ul>
+                                        <li>n = velocidad de rotación [rps]</li>
+                                        <li>D = Diámetro del agitador [m]</li>
+                                        <li>&rho; = Densidad del fluido [kg/m<sup>3</sup>]</li>
+                                        <li>&mu; = Viscosidad [Pa s]</li>
+                                    </ul>
+                                    <p>El valor del número de Reynolds define si el carácter 
+                                        del fluido es turbulento o laminar. Además se considera 
+                                        que el paso entre el régimen laminar y el turbulento no 
+                                        es inmediato, pasando por una zona de transición. Se 
+                                        define de la siguiente manera:</p>
+                                        <ul>
+                                            <li>Régimen laminar: Re < 10</li>
+                                            <li>Régimen transitorio: 300 < Re < 10000 </li>
+                                            <li>Régimen turbulento: Re > 10000</li>
+                                        </ul>
+                                    <h2>Número de Froude (Fr)</h2>
+                                    <p>El número de Froude es una medida que relaciona la fuerza 
+                                        de inercia y la fuerza gravitacional por unidad de área 
+                                        que actua sobre el fluido. Se utiliza en el cálculo del 
+                                        consumo de potencia cuando el fluido del tanque genera 
+                                        un movimiento de ondas a causa de la falta de placas 
+                                        deflectoras.</p>
+                                        <p><img src="img2html3.jpg" class="img-fluid"></p>
+                                    <p>Donde g es 9,8 m/s<sup>2</sup></p>
+                                    <h2>Número de potencia (Np)</h2>
+                                    <p>El número de potencia es análogo al factor de 
+                                        fricción o al coeficiente de arrastre, siendo 
+                                        proporcional a la relaci'on entre la fuerza de 
+                                        rozamiento que actúa sobre una unidad de área del 
+                                        impulsor y la fuerza de inercia. Cuando el estanque 
+                                        contiene placas deflectoras, el Np tiene una buena 
+                                        correlación con el número de Reynolds.<br>
+                                        Cuando Existe régimen turbulento, Np tiene valor 
+                                        constante.</p>
+                                        <p><img src="img3html3.jpg" class="img-fluid"></p>
+                                        <p>
+                                            Donde P es la Potencia de agitación del 
+                                            impulsor [W]</li>
+                                        </p>
+                                        <p>Se pueden distinguir los siguientes casos:</p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Tanque con placas deflectoras</th>
+                                                    <th>Tanques sin placas deflectoras</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2"><p><img src="img4html3.jpg" class="img-fluid"></p></td>
+                                                    <td class="left"><p><img src="img5html3.jpg" class="img-fluid"></p><br>
+                                                        <p>a y b corresponden a datos empiricos, 
+                                                            el número de Froude aparece en la 
+                                                            ecuación debido ala formación de 
+                                                            vórtices.</p>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                        <h2>Consumo de potencia</h2>
+                                        <h3>Para n° de Re < 10, con o sin placas deflectoras.</h3>
+                                        <p>Para números bajos de Reynolds las curvas de 
+                                            N<sub>P</sub> y N<sub>Re</sub> coinciden para 
+                                            un tanque con o sin placas deflectoras. En este 
+                                            intervalo el flujo es laminar y la densidad no 
+                                            influye. La ecuación de potencia es la siguiente:</p>
+                                            <p><img src="img6html3.jpg" class="img-fluid"></p>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Impulsor</th>
+                                                        <th>K<sub>L</sub></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left">Helice paso cuadrado 3 palas</td>
+                                                        <td>41</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">Turbina paso de 2, 3 palas</td>
+                                                        <td>43,5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">Turbina 6 palas planas</td>
+                                                        <td>71</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">Turbina 6 palas curvas</td>
+                                                        <td>70</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">Turbina de ventilador, 6 palas</td>
+                                                        <td>70</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">Turbina 2 palas planas</td>
+                                                        <td>36,5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">Turbina cerrada 6 palas curvas</td>
+                                                        <td>97,2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        <h3>Para n° de Re > 300 sin placas deflectoras.</h3>
+                                        <p>En esta región los números de Reynolds, que 
+                                            habitualmente se evita en la práctica cuando se 
+                                            utilizan tanques sin placas deflectoras, se 
+                                            forma un vórtice y tiene influencia el número 
+                                            de Froude. Es por eso, que en la ecuación se 
+                                            transforma en:</p>
+                                            <p><img src="img7html3.jpg" class="img-fluid"></p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>n</th>
+                                                <th>Figura</th>
+                                                <th>Linea</th>
+                                                <th>a</th>
+                                                <th>b</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="left">Turbina de 6 palas</td>
+                                                <td>D</td>
+                                                <td>1</td>
+                                                <td>40</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="left">Helice de 3 palas</td>
+                                                <td>B</td>
+                                                <td>1,7</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="left">Helice de 3 palas</td>
+                                                <td>C</td>
+                                                <td>0</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="left">Helice de 3 palas</td>
+                                                <td>D</td>
+                                                <td>2,3</td>
+                                                <td>18</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                        <h3>Para n° de Re > 300 con placas deflectoras</h3>
+                                        <p><img src="img8html3.jpg" class="img-fluid"></p>
+                                        <h3>Para número de Re > 10000 con placas deflectoras.</h3>
+                                        <p>En este caso el N<sub>P</sub> es independiente del 
+                                            Reynolds, la viscosidad no influye en el sistema.<br>
+                                        En este intervalo es flujo es totalmente turbulento y 
+                                        N<sub>P</sub> se vuelve constante. La ecuación se 
+                                        transforma en:</p>
+                                        <p><img src="img9html3.jpg" class="img-fluid"></p>
+                                        <p>Donde:</p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Impulsor</th>
+                                                    <th>K<sub>T</sub></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="left">Helice paso cuadrado 3 palas</td>
+                                                    <td>0,32</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Helice paso de 2, 3 palas</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Turbina 6 palas planas</td>
+                                                    <td>6,3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Turbina 6 palas curvas</td>
+                                                    <td>4,8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Turbina de ventilador, 6 palas</td>
+                                                    <td>1,65</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Turbina 2 palas planas</td>
+                                                    <td>1,7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Turbina cerrada 6 palas curvas</td>
+                                                    <td>1,08</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>Una vez obtenida la potencia necesaria para 
+                                            nuestro agitador, se debe tener en cuenta que 
+                                            la misma es la necesaria para impartir 
+                                            movimiento al fluido, no es la potencia del 
+                                            motor que se utilizara, existiendo perdidas 
+                                            energéticas de hasta 50% en el peor de los 
+                                            casos. Por lo cual la potencia que debe poseer 
+                                            el motor a implementar se puede obtener de la 
+                                            siguiente manera:</p>
+                                            <p><img src="img10html3.jpg" class="img-fluid"></p>
+                                </main>
+                    </div>
+                    <div class="col-xs-12
+                                col-sm-3
+                                col-md-d-3
+                                col-lg-3">
+                                <aside>
+                                    <ul>
+                                        <li><h1>Enlaces de Interes:</h1></li>
+                                        <li><a href="https://www.roperpumps.com/" target="_blanck">Bombas Roper</a></li>
+                                        <li><a href="https://www.ducon.com/index.html"target="_blanck">Ducon - Ingenieria Ambiental</a></li>
+                                        <li><a href="https://www.checalc.com/index.html"target="_blanck">Calculos en Ingenieria Quimica</a></li>
+                                        <li><a href="https://encyclopedia.che.engin.umich.edu/"target="_blanck">Enciclopedia Visual de equipamientos para Ingenieria Quimica</a></li>
+                                        <li><a href="https://www.argentina.gob.ar/inta"target="_blanck">Instituto Nacional de Tecnologia Agropecuaria (INTA)</a></li>
+                                        <li><a href="https://www.argentina.gob.ar/inti"target="_blanck">Instituto Nacional de Tecnología Industrial (INTI)</a></li>
+                                        <li><a href="https://iquimica.com.ar/"target="_blanck">Ingenieria Quimica (IQ)</a></li>
+                                        <li><a href="https://prtr-es.es/documentos/documentos-mejores-tecnicas-disponibles"target="_blanck">Mejores tecnicas disponibles (UE)</a></li>
+                                        <li><a href="https://es.tradingview.com/"target="_blanck">TradingView</a></li>
+                                        <li><a href="https://www.tinkercad.com/dashboard"target="_blanck">TinkerCad - Arduino/ Electronica/ Impresión 3D</a></li>
+                                    </ul>
+                                </aside>
+                        
+                    </div>
+                </div>
+                <footer>
+                    <div class="row">
+                        <div class="col-xs-12
+                                    col-sm-6
+                                    col-md-d-8
+                                    col-lg-8">
+                                    <h1>Sobre mí:</h1>
+                                    <p class="foot">Soy Palaszczuk Martin y me encantan los retos, la creatividad, 
+                                        la música y por supuesto la informática, por ello, realicé este 
+                                        página web para poder llevar a cada uno de ustedes algunos 
+                                        conocimientos de Ingeniería Química.</p>
+                                    
+                        </div> 
+                        <div class="col-xs-12
+                                    col-sm-6
+                                    col-md-d-4
+                                    col-lg-4">
+                                    <div class="socialContact 
+                                                container">
+                                                <div class="row">
+                                                    <h2 class="col-sm">Contacto:</h2>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <a href="https://www.facebook.com" target="_blank">
+                                                            <i class="fa fa-facebook" aria-hidden="true"><img class="redSocial" src="../Comunes/Facebook.svg"></i>
+                                                            </a>
+                                                            </li>     
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.twitter.com" target="_blank">
+                                                            <i class="fa fa-twitter" aria-hidden="true"><img class="redSocial"src="../Comunes/Twitter.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.instagram.com" target="_blank">
+                                                            <i class="fa fa-instagram" aria-hidden="true"><img class="redSocial"src="../Comunes/Instagram.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.pinterest.com" target="_blank">
+                                                            <i class="fa fa-pinterest" aria-hidden="true"><img class="redSocial"src="../Comunes/Pinterest.svg"></i>
+                                                            </a>   
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="https://www.linkedin.com" target="_blank">
+                                                            <i class="fa fa-linkedin" aria-hidden="true"><img class="redSocial"src="../Comunes/Linkedin.svg"></i>
+                                                            </a>    
+                                                    </div>
+                                                    
+                                                </div>
+                                                                
+                                    </div> 
+                        </div> 
+                    </div>
+                </footer>
+
+            </div>
+        </article>  
+    </body>
+</html>
